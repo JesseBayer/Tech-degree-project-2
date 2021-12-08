@@ -1,7 +1,14 @@
 /* font-family: 'Roboto', sans-serif;   CSS rule to specify font families*/
+*{
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 body {
-    box-sizing: border-box;
+    background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -14,21 +21,55 @@ h1, h2, h3 {
     text-align: center;
 }
 
-nav {
-    width: 85vw;
-    display: inline-block;
-    text-align:center;
+h3 {
+    font-size: 16px;
+    padding: 25px;
 }
 
-nav ul {
-    list-style-type: none;
+h2 {
+    font-weight:300;
 }
 
-nav a {
-    color: black;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li {
+    text-align: center;
+    margin: 5px;
+    padding: 11px;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    font-weight: bold;
     text-decoration: none;
+    color: black;
 }
+
 
 p {
     text-align: center;
+    font-size: 18px;
 }
+
+.profile {
+    margin-bottom: 45px;
+}
+
+.content {
+    background-color: rgb(252, 252, 252);
+    padding: 15px 5px;
+    
+    
+}
+
