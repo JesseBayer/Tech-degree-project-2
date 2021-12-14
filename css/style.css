@@ -199,3 +199,26 @@ p {
         color: rgb(78, 76, 76);
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .content {
+        max-width: 33%;
+    }
+
+    .content img {
+        padding: 5px;
+    }
+
+    .content p {
+        margin: 0 15%;
+        padding-bottom: 30px;
+    }
+
+    .footerP {
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+}
