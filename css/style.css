@@ -60,6 +60,7 @@ a {
 p {
     text-align: center;
     font-size: 18px;
+    color: rgb(100, 96, 96);
 }
 
 .profile {
@@ -73,10 +74,54 @@ p {
     
 }
 
+.footerNav{
+    visibility: hidden;
+}
+
+.footerName {
+    font-weight: bold;
+    float: left;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: black;
+}
+
+.backToTop{
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.footerEmail {
+    border-bottom: rgb(238, 234, 234) 1px solid;
+    border-width: 95%;
+    padding-bottom: 75px;
+}
+
 @media screen and (min-width: 768px) {
     main {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    nav {
+       text-align: center; 
+       margin: 0 auto;
+       padding-bottom: 50px;
+       
+    }
+
+    nav ul{
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: inline-block;
+        background-color: whitesmoke;
     }
 
     .content {
@@ -92,12 +137,65 @@ p {
         margin-bottom: 0;
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: row;
-    }
-
     footer h3, p{
         text-align: center;
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    .profile img{
+        width: 50%;
+        float: right;
+    }
+
+
+    .profile p {
+        padding-left: 25px;
+        font-size: 20px;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    img {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .backToTop{
+        display: none;
+    }
+
+    
+
+    .footerNav {
+        font-size: 14px;
+        display: flex;
+        visibility: visible;
+        float: right;
+    }
+
+    .footerNav ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .footerNav li {
+        padding-left: 20px;
+        padding-right: 15px;
+        
+    }
+
+    .footerNav a {
+        color: rgb(78, 76, 76);
+    }
+
+    .footerEmail {
+        border-width: 95%;
+        margin: 0;
+    }
+
+    .footerName {
+        font-size: 16px;
+        color: rgb(78, 76, 76);
     }
 }
