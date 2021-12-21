@@ -10,6 +10,9 @@ main {
 body {
     background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    max-width: 1275px; 
+	margin: 0 auto !important; 
+	float: none !important;
 }
 
 img {
@@ -68,8 +71,6 @@ p {
 .content {
     background-color: rgb(252, 252, 252);
     padding: 15px 5px;
-    
-    
 }
 
 footer {
@@ -101,6 +102,16 @@ footer {
 .footerEmail {
     border-bottom: rgb(238, 234, 234) 1px solid;
     padding-bottom: 75px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.skillList {
+    width: 100vw;
 }
 
 
@@ -222,12 +233,6 @@ footer {
         flex-direction: column;
     }
     
-    .skillList {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin: auto 25px;
-    }
     
     .skillList p {
         padding-left: 35px;
@@ -252,7 +257,7 @@ footer {
     }
     
     .content {
-        max-width: 33%;
+        max-width: 425px;
     }
 
     .content img {
@@ -271,17 +276,12 @@ footer {
         font-size: 20px;
         word-wrap: break-word;
     }
-
-    #skills {
-        display: flex;
-        flex-direction: column;
-    }
     
     .skillList {
-        width: 100%;
         display: flex;
         flex-direction: row;
         margin: auto 25px;
+        padding-left: 75px;
     }
     
     .skillList p {
@@ -293,6 +293,33 @@ footer {
     
     .skillList ul {
         width: 100px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation nav {
+        font-size: 18px;
+        display: flex;
+        margin-right: 25px;
+        text-align: center;
+        width: 550px;
+    }
+
+    .navigation h1 {
+        padding: 0;
+        margin-left: 25px;
+        width: auto;
+        font-size: 25px;
+        color: rgb(78, 76, 76);
+    }
+
+    .navigation ul{
+        text-decoration: none;
+        list-style-type: none;
+        padding-left: 150px;
     }
 
 }
