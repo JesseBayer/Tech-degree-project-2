@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -26,7 +29,8 @@ h1, h2, h3 {
 
 h3 {
     font-size: 16px;
-    padding: 25px;
+    padding: 25px 20px;
+    max-width: 1275px;
 }
 
 h2 {
@@ -105,14 +109,22 @@ footer {
 }
 
 #skills {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     width: 100vw;
 }
 
 .skillList {
     width: 100vw;
+    text-align: center;
 }
+
+.skillList ul {
+    text-align: left;
+    display:inline-table
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -258,6 +270,7 @@ footer {
     
     .content {
         max-width: 425px;
+        flex-basis: 33vw;
     }
 
     .content img {
